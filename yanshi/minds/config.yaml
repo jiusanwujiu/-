@@ -1,0 +1,30 @@
+# 砚识 v0.8 配置文件
+# 环境变量覆盖: YANSHI_<section>__<key>=<value>
+
+log:
+  level: "INFO"
+  file_enabled: true
+  console_enabled: true
+  max_file_size_mb: 10
+  backup_count: 3
+
+engine:
+  llm_backend: "auto"
+  ollama_host: "http://localhost:11434"
+  ollama_model: "qwen2.5:7b"
+  cycle_interval_ms: 0
+
+tool:
+  shell_timeout: 30
+  web_timeout: 10
+  file_max_read_lines: 500
+  danger_commands: ["rm -rf /", "dd if=", "mkfs", "> /dev/sda"]
+
+heartbeat:
+  enabled: true
+  interval_seconds: 15
+
+ops:
+  health_check_enabled: true
+  metrics_enabled: true
+  dashboard_enabled: true

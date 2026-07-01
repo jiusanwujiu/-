@@ -1,0 +1,2 @@
+{"ts": "2026-07-01T13:30:43.867Z", "level": "INFO", "event": "engine.init", "version": "0.9", "backend": "keyword", "tools": 34, "rules": 11}
+{"ts": "2026-07-01T13:30:43.868Z", "level": "INFO", "event": "lifecycle.start", "phase": "starting"}
